@@ -1,0 +1,163 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lucida';
+    src: url('../assets/lucida-console/lucon.ttf') format('truetype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  background-color: #262624; /* dark background to match your site */
+}
+
+body {
+    background-color: #262624;
+    font-family: 'Lucida', sans-serif;
+    color: #ECEBE4;
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    color: #ECEBE4;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;                /* Start from the middle */
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after {
+  width: 100%;              /* Expand to full width */
+}
+
+/* nav a:hover {
+    text-decoration: underline;
+} */
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+/* Profile Section */
+.profile_pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.artico {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #262624;
+    color: #ECEBE4;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.hide {
+    position: relative;
+    text-decoration: none;
+    margin-top: 6rem;
+    color: #ECEBE4;
+}
+
+.hide::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;              /* Position vertically middle */
+  width: 0;
+  height: 2px;           /* Thickness of the strike line */
+  background-color: #4CAF50;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease;
+}
+
+.hide:hover::after {
+  width: 100%;
+}
+
+/* .hide:hover {
+    text-decoration: line-through;
+} */
+
+.name {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+}
+
+.btn-1 {
+  background-color: #4CAF50;   
+  color: white;         
+  padding: 10px 20px;
+  border: none;  
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #125202;
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: #4CAF50;
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-2:hover {
+  background-color: #4CAF50;
+  color: white;
+}
