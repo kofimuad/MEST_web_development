@@ -2,11 +2,10 @@
 # It prompts the user for their name and when they input their name,
 # it prints a welcome message. Saying; welcome "user's name".
 
-# # Request the user's name
+# Request the user's name
 # name = input("What is your name?\n")
 # # Print the welcome message with the user's name
 # print(f"Welcome, {name}!")
-
 
 
 # age = 77 # this is a int data type
@@ -126,13 +125,79 @@
 
 # Discount calculator
 
-purchase_amt = float(input("Input your purchase amount here: GHS "))
+# purchase_amt = float(input("Input your purchase amount here: GHS "))
 
-if purchase_amt >= 100:
-    dis_amt = purchase_amt - (purchase_amt * 0.2)
-    print(f"This is the price you have to pay GHS {dis_amt}")
-elif purchase_amt >= 50:
-    dis_amt = purchase_amt - (purchase_amt * 0.1)
-    print(f"This is the price you have to pay GHS {dis_amt}")
-else:
-    print(f"No discount allowed for GHS {purchase_amt}")
+# if purchase_amt >= 100:
+#     dis_amt = purchase_amt - (purchase_amt * 0.2)
+#     print(f"This is the price you have to pay GHS {dis_amt}")
+# elif purchase_amt >= 50:
+#     dis_amt = purchase_amt - (purchase_amt * 0.1)
+#     print(f"This is the price you have to pay GHS {dis_amt}")
+# else:
+#     print(f"No discount allowed for GHS {purchase_amt}")
+
+# We are going to learn about Loops now.
+
+# std1 = "Alex"
+# std2 = "Afia"
+# std3 = "Hydra"
+
+# students = ["Alex", "Afia", "Hydra"]
+
+# for student in students:
+#     print(student)
+
+# file = open("tasks.txt", "r")
+# tasks = file.read().split("\n")
+# for task in tasks:
+#     print(task)
+# for i, task in enumerate(tasks):
+#     print(f"{i} {task}")
+# for task in tasks:
+#     print(f"{tasks.index(task)}. {task}")
+# for task in tasks:
+#     print(f"{tasks.index(task) + 1}. {task}")
+
+# Use loop to calculate the sum of teh numbers below
+# numbers = [10, 5, 20, 8, 15]
+# total = 0
+# for num in numbers:
+#     total += num
+# print(total)
+
+# emails = open("emails.txt", "r")
+# email_list = emails.read().split("\n") 
+# # print(email_list)
+
+# user_name = ""
+# for email in email_list:
+#     user_name = email.split('@')[0]
+#     print(user_name)
+
+# user_names = []
+# for email in email_list:
+#     user_name = email.split('@')[0]
+#     user_names.append(user_name)
+# print(user_names)
+
+
+
+#  DEMONSTRATE COMPOUNDING INTEREST
+
+# Have the user enter their investment amount and expected interest
+
+invest_amt = int(input("What amount are you investing? \n"))
+interest = float(input("What's your expected interest? \n"))
+
+# Each year their investment will increase by (their investment + their investment * interest)
+for i in range(10):
+    invest_amt = invest_amt + (invest_amt * interest)
+
+# Print out the earnings after 10 years.
+print("{:.2f}".format(invest_amt))
+
+# Ask for money invested + the interest rate
+
+# Convert the value to a float
+
+# Convert value to a float and round the percent

@@ -40,6 +40,11 @@ nav a {
     color: #ECEBE4;
 }
 
+nav a.active {
+  color: #4CAF50; /* active page */
+  font-weight: bold; /* optional */
+}
+
 nav a::after {
   content: "";
   position: absolute;

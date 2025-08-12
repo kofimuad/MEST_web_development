@@ -18,18 +18,18 @@ html, body {
 }
 
 body {
-    background-color: #262624;
-    font-family: 'Lucida', sans-serif;
-    color: #ECEBE4;
+  background-color: #262624;
+  font-family: 'Lucida', sans-serif;
+  color: #ECEBE4;
 }
 
 /* Navigation */
 nav {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 nav a {
@@ -38,6 +38,11 @@ nav a {
     color: inherit;
     font-weight: 500;
     color: #ECEBE4;
+}
+
+nav a.active {
+  color: #4CAF50; /* active page */
+  font-weight: bold; /* optional */
 }
 
 nav a::after {
@@ -54,4 +59,144 @@ nav a::after {
 
 nav a:hover::after {
   width: 100%;              /* Expand to full width */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25rem;
+  margin-right: 25rem;
+}
+
+article h1 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #4CAF50;
+  text-underline-offset: 4px;
+}
+
+article p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.skillo {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.skills {
+  text-align: center;
+  /* padding: 20px; */
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.skill-icons i {
+  font-size: 60px;
+  color: #171515;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-icons {
+  display: flex;
+  flex-direction: column; /* stack rows vertically */
+  gap: 20px; /* space between rows */
+  align-items: center; /* center the rows horizontally */
+}
+
+.skill-icons .row {
+  display: flex;
+  gap: 30px;
+}
+
+/* Hover effect - scale up slightly */
+.skill-icons i:hover {
+  transform: scale(1.2);
+  color: #4CAF50; /* optional: change color on hover */
+}
+
+/* Optional bounce effect instead */
+/* .skill-icons i:hover {
+  animation: bounce 0.5s;
+  color: #ff5722;
+} */
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.services {
+  text-align: center;
+  padding: 20px;
+}
+
+.service-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+  flex-wrap: wrap; /* makes it responsive on small screens */
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item i {
+  font-size: 45px;
+  color: #171515;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.service-item i:hover {
+  transform: scale(1.2);
+  color: #4CAF50;
+}
+
+.services h2 {
+  font-size: 1rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #262624;
+    color: #ECEBE4;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-color: #4CAF50;
+  text-underline-offset: 4px;
+}
+
+.kaizoku {
+  border-radius: 50%;
+  height: 150px;
+  width: auto;
 }
