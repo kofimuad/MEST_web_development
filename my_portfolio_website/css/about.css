@@ -108,7 +108,7 @@ h2 {
 
 .skill-icons i {
   font-size: 60px;
-  color: #171515;
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@ h2 {
 
 .service-item i {
   font-size: 45px;
-  color: #171515;
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
@@ -217,4 +217,96 @@ footer {
   color: #4CAF50;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
+}
+
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #262624; /* light neutral background */
+}
+
+#contact h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#contact .contact-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Contact Icons */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-links a {
+  font-size: 2rem;
+  color: #555;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #4CAF50; /* highlight green (match your site accent) */
+  transform: scale(1.2);
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #f9f9f9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4CAF50;
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Closing Line */
+.closing-line {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #fff
 }

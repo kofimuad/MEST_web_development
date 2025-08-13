@@ -143,9 +143,11 @@
 # std3 = "Hydra"
 
 # students = ["Alex", "Afia", "Hydra"]
-
+# names = []
 # for student in students:
-#     print(student)
+#     names.append(student)
+
+# print(names)
 
 # file = open("tasks.txt", "r")
 # tasks = file.read().split("\n")
@@ -186,18 +188,59 @@
 
 # Have the user enter their investment amount and expected interest
 
-invest_amt = int(input("What amount are you investing? \n"))
-interest = float(input("What's your expected interest? \n"))
+# invest_amt = int(input("What amount are you investing? \n"))
+# interest = float(input("What's your expected interest? \n"))
 
-# Each year their investment will increase by (their investment + their investment * interest)
-for i in range(10):
-    invest_amt = invest_amt + (invest_amt * interest)
+# # Each year their investment will increase by (their investment + their investment * interest)
+# for i in range(10):
+#     invest_amt = invest_amt + (invest_amt * interest)
 
-# Print out the earnings after 10 years.
-print("{:.2f}".format(invest_amt))
+# # Print out the earnings after 10 years.
+# print("{:.2f}".format(invest_amt))
 
 # Ask for money invested + the interest rate
 
 # Convert the value to a float
 
 # Convert value to a float and round the percent
+
+
+# def register_user(user, email, password):
+#     # Check if the user does not already have an account
+#     # hash your password
+#     # Validate inputs
+#     # Check if user is not a robot
+#     # Returns response
+#     return "User registered successfully"
+
+# register_user("Bismark", "iambismark38@gmail.com", "theeend")
+
+
+# def my_idi(fname):
+#     print(fname + " Lord Finess")
+
+# my_idi("Hydra")
+
+# import add
+# import delete
+# import show
+# import update
+# # Check the files, you will see the code in those files.
+
+# add_task_response = add.add_task("sleep")
+# print(add_task_response)
+
+# show_task_response = show.add_task()
+# print(show_task_response)
+
+# update_task_response = add.add_task("sleep", "wake up")
+# print(update_task_response)
+
+# delete_task_response = add.add_task("sleep")
+# print(delete_task_response)
+
+
+# def add(x, y, z):
+#     result = x + y + z
+#     return result
+# add(5,4,8)
