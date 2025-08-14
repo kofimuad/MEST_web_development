@@ -221,26 +221,26 @@
 
 # my_idi("Hydra")
 
-# import add
-# import delete
-# import show
-# import update
-# # Check the files, you will see the code in those files.
+import add
+import delete
+import show
+import update
+# Check the files, you will see the code in those files.
 
-# add_task_response = add.add_task("sleep")
-# print(add_task_response)
+add_task_response = add.add_task("sleep")
+print(add_task_response)
 
-# show_task_response = show.add_task()
-# print(show_task_response)
+show_task_response = show.add_task()
+print(show_task_response)
 
-# update_task_response = add.add_task("sleep", "wake up")
-# print(update_task_response)
+update_task_response = add.add_task("sleep", "wake up")
+print(update_task_response)
 
-# delete_task_response = add.add_task("sleep")
-# print(delete_task_response)
+delete_task_response = add.add_task("sleep")
+print(delete_task_response)
 
 
-# def add(x, y, z):
-#     result = x + y + z
-#     return result
-# add(5,4,8)
+def add(x, y, z):
+    result = x + y + z
+    return result
+add(5,4,8)
