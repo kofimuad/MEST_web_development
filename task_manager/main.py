@@ -221,25 +221,46 @@
 
 # my_idi("Hydra")
 
-import add
-import delete
-import show
-import update
-# Check the files, you will see the code in those files.
+# import add
+# import delete
+# import show
+# import update
+# # Check the files, you will see the code in those files.
 
-add_task_response = add.add_task("sleep")
-print(add_task_response)
+# add_task_response = add.add_task("sleep")
+# print(add_task_response)
 
-show_task_response = show.add_task()
-print(show_task_response)
+# show_task_response = show.add_task()
+# print(show_task_response)
 
-update_task_response = add.add_task("sleep", "wake up")
-print(update_task_response)
+# update_task_response = add.add_task("sleep", "wake up")
+# print(update_task_response)
 
-delete_task_response = add.add_task("sleep")
-print(delete_task_response)
+# delete_task_response = add.add_task("sleep")
+# print(delete_task_response)
 
 # def add(x, y, z):
 #     result = x + y + z
 #     return result
 # add(5,4,8)
+
+
+# from oop import Chat
+
+# chat_with_abena = Chat()
+
+# print(chat_with_abena)
+# chat_with_hydra = Chat("Luminous Darkness", "The moon is dark", "6:30PM")
+# chat_with_0551283848 = Chat("The Closer", "When are you coming home", "3:30PM")
+
+# # Each of these are instances (objects) of the class Chat
+
+# print(chat_with_abena.open())
+# print(chat_with_hydra.open())
+# print(chat_with_0551283848.open())
+
+
+def gifty(name):
+    print(f"My name: {name} is not your name")
+
+gifty("Hydra")
